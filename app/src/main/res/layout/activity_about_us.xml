@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg"
+    tools:context=".AboutUsActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/inlogo" />
+
+    <TextView
+        android:id="@+id/textView69"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bubblegum_sans"
+        android:text="About Us"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="50dp"
+        android:fontFamily="@font/bubblegum_sans"
+        android:gravity="center_horizontal"
+        android:text="Hey, Android Aura here, an independent developer. Infinitrix is developed for someone who love challenges. It is an interesting mind game and stress buster. If you love this stuff, rate us, and share with your friends too. For further queries contact us, contactauraa@gmail.com."
+        android:textColor="@color/cardview_light_background"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/cardView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView4"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="30dp"
+        app:cardCornerRadius="20dp"
+        app:cardPreventCornerOverlap="false"
+        app:layout_constraintBottom_toTopOf="@+id/cardView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/btnRate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/buttonbg"
+            android:clickable="true"
+            android:fontFamily="@font/bubblegum_sans"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Rate Us"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView5"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="50dp"
+        app:cardCornerRadius="20dp"
+        app:cardPreventCornerOverlap="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/btnShare"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/buttonbg"
+            android:clickable="true"
+            android:fontFamily="@font/bubblegum_sans"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Share"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
